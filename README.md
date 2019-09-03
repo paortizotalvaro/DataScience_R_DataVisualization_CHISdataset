@@ -1,0 +1,54 @@
+---
+title: "README plot_CHISdata.R"
+author: "P. A. Ortiz Otalvaro"
+date: "2 September 2019"
+---
+
+# README plot_CHISdata.R
+
+This is a single script that extracts a subset from the California Health Information Survey. The CHIS is the largest state health survey in the US.
+
+
+# Data set
+This repository contains a data dictionary describing all features in the data set (puf09_adult_datadic.pdf).
+
+The data file used with this script is too big to upload to github. To access the file you can go to the official website of CHIS:
+https://healthpolicy.ucla.edu/
+
+More specifically, go to the 2009 adult data set in the public doman (require to create an user account):
+http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/2009.aspx
+
+
+or also use this link (the copy of the data I used):  
+https://drive.google.com/open?id=1s56egQM4LpGZIK582vJFjw19wjT8S-cq
+
+
+
+# How to visualize CHIS data set using plot_CHISdata.R
+
+Note:
+You should have installed in RStudio before following the next steps:
+
+* ggplot2
+* haven package
+* dplyr package
+* reshape2
+* ggthemes
+
+After installing all the required packages:
+
+1. Download the data. Save it inside a folder called _chis09_adult_spss_
+2. Download plot_CHISdata.R and locate it in the parent folder of _chis09_adult_spss_
+3. Create a directory _chis09_plots_ for the plots to be saved in.
+4. Open plot_CHISdata.R in RStudio. Set your working directory to the folder where plot_CHISdata.R is located (i.e. the parent folder of _chis09_adult_spss_).
+5. Run the script in RStudio:  
+
+`Run source("plot_CHISdata.R")`
+
+
+11 new files should appear in the folder _chis09_plots_ with the resulting plots.
+
+
+
+
+
